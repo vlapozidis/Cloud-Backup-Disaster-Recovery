@@ -148,9 +148,9 @@ The database was restored using Azure SQL Database's Point-in-Time Restore featu
 
 Configuration:
 
-Source Database: UniversityDB
-Restore Point: Before the incident
-Restored Database: UniversityDB-Restore
+- Source Database: UniversityDB
+- Restore Point: Before the incident
+- Restored Database: UniversityDB-Restore
 <img width="1393" height="35" alt="image" src="https://github.com/user-attachments/assets/09f2a1f0-30cc-4247-9267-5a011d9787cc" />
 
 
@@ -160,8 +160,8 @@ After the restoration completed successfully, SQL queries confirmed that all del
 
 Verification included:
 
-Record count comparison
-Query comparison before and after restore
+- Record count comparison
+- Query comparison before and after restore
 
 <img width="1907" height="969" alt="Screenshot 2026-07-01 121651" src="https://github.com/user-attachments/assets/12d31091-36fa-40f6-9a4d-f04afee21e92" />
 
