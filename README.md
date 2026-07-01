@@ -186,6 +186,25 @@ Verification included:
 <img width="1189" height="189" alt="image" src="https://github.com/user-attachments/assets/f67f4871-aa08-4f43-b4fd-94953ced73c9" />
 
 ---
+## © Copyright
+
+This project was created by:
+
+<table>
+<tr>
+<td align="center">
+<img src="https://github.com/DimitraDern.png" width="120" height="120" style="border-radius:50%;" alt="Dimitra Dernektsi"/><br>
+<strong>Dimitra Dernektsi</strong>
+</td>
+
+<td align="center">
+<img src="https://github.com/vlapozidis.png" width="120" height="120" style="border-radius:50%;" alt="Vladimiro Pozidi"/><br>
+<strong>Vladimiros Pozidis</strong>
+</td>
+</tr>
+</table>
+
+© 2026 Dimitra Dernektsi & Vladimiros Pozidis. All rights reserved.
 
 
 
