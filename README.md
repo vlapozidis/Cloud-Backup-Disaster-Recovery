@@ -31,14 +31,17 @@ The system includes the following components:
 
 A relational database schema was designed with 10 tables including proper primary and foreign key relationships.
 
-📌 ER Diagram:
+📌 ER diagram:
 
-<img width="2470" height="948" alt="image" src="https://github.com/user-attachments/assets/c9570491-fa36-431d-9d10-0c6e60027e18" />
+<img width="2470" height="948" alt="image" src="https://github.com/user-attachments/assets/ee6347b9-f09a-4153-a221-ebd9474080dc" />
+
+---
 
 ### 2. Azure Setup
 
 - Created Azure Free Tier subscription
 - Created Resource Group
+  
 ---
 ## 🗄️ Phase 2 — Production Database Setup
 
@@ -48,8 +51,6 @@ A relational database schema was designed with 10 tables including proper primar
 - Deployed Azure SQL Database (Basic tier)
 - Configured firewall rules (IP whitelisting)
 - Connected using SSMS / Azure Data Studio
-
-<img width="2470" height="948" alt="image" src="https://github.com/user-attachments/assets/ee6347b9-f09a-4153-a221-ebd9474080dc" />
 
 ---
 
@@ -114,8 +115,8 @@ Retention policies:
 
 -This architecture represents a geo-replication setup where an application interacts with a primary database responsible for all read and write operations, while a secondary database in a different region is asynchronously synchronized as a read-only replica. The secondary database is used for disaster recovery and can take over in case of primary failure, improving system availability and reducing downtime through failover capability.
 
-- RPO: Near-zero (typically < 1 minute) due to asynchronous replication between primary and secondary regions.
-- RTO: 1–5 minutes due to fast failover capability to the secondary region.
+-RPO: Near-zero (typically < 1 minute) due to asynchronous replication between primary and secondary regions.
+-RTO: 1–5 minutes due to fast failover capability to the secondary region.
 RPO and RTO are not fixed values but depend on the Azure SQL Database geo-replication configuration; typically RPO is under 1 minute and RTO is between 1–5 minutes.
 
 This ensures minimal data loss and fast recovery in case of failure.
