@@ -133,12 +133,13 @@ This ensures minimal data loss and fast recovery in case of failure.
 - Verified data integrity using SQL queries
 
 📌 Incident Example:
-
-![Incident](./screenshots/incident.png)
+- In this incident example, a database table was accidentally dropped, causing an issue with key distribution. The table was restored using point-in-time restoration (PITR). 
+<img width="800" height="556" alt="image" src="https://github.com/user-attachments/assets/38d41245-cc36-4b7d-8db8-82e6e34a9187" />
 
 📌 Restore Process:
 
-![Restore](./screenshots/point-in-time-restore.png)
+<img width="1907" height="969" alt="image" src="https://github.com/user-attachments/assets/23244757-2d55-4a3e-a62f-340580a19b48" />
+
 
 ---
 ## 📡 Phase 6 — Monitoring & Alerting
@@ -149,11 +150,17 @@ This ensures minimal data loss and fast recovery in case of failure.
 
 📌 Monitoring Dashboard:
 
-![Monitoring Dashboard](./screenshots/monitoring-dashboard.png)
+<img width="1049" height="720" alt="image" src="https://github.com/user-attachments/assets/cb4cff4f-bb25-423f-b178-f3d2b18579bb" />
+
 
 📌 Alert Rules:
 
-![Alerts](./screenshots/alerts.png)
+-CPU overworking alert which alerts admins if the CPU is usage is 80% or more so as to check the condition of the database
+<img width="1174" height="202" alt="image" src="https://github.com/user-attachments/assets/a4905c51-dcb0-485c-89fa-9f589bd6c723" />
+
+-Data Usage alert indicating excessive usage of data prompting the user to chech the database
+
+<img width="1189" height="189" alt="image" src="https://github.com/user-attachments/assets/f67f4871-aa08-4f43-b4fd-94953ced73c9" />
 
 ---
 
