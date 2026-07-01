@@ -60,6 +60,7 @@ A relational database schema was designed with 10 tables including proper primar
 - Monitored active connections
 
 📌 Monitoring Dashboard (Baseline):
+
 <img width="1080" height="1080" alt="Untitled Project" src="https://github.com/user-attachments/assets/8cf4c151-28f8-4ee8-8234-3e58554c356c" />
 
 
