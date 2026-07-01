@@ -135,7 +135,7 @@ This ensures minimal data loss and fast recovery in case of failure.
 - Verified data integrity using SQL queries
 
 📌 Incident Example:
-- In this incident example, a database table was accidentally dropped, causing an issue with key distribution. The table was restored using point-in-time restoration (PITR). 
+- In this incident example, a database table named "Grades" was accidentally dropped, causing an issue with key distribution. The table was restored using point-in-time restoration (PITR). 
 <img width="800" height="556" alt="image" src="https://github.com/user-attachments/assets/38d41245-cc36-4b7d-8db8-82e6e34a9187" />
 
 📌 Restore Process:
@@ -156,7 +156,7 @@ Restored Database: UniversityDB-Restore
 
 ### 3. Verification
 
-After the restoration completed successfully, SQL queries confirmed that all deleted student records had been recovered.
+After the restoration completed successfully, SQL queries confirmed that all deleted grades records had been recovered.
 
 Verification included:
 
