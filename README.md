@@ -178,10 +178,10 @@ Verification included:
 
 📌 Alert Rules:
 
--CPU overworking alert which alerts admins if the CPU is usage is 80% or more so as to check the condition of the database
+  - CPU overworking alert which alerts admins if the CPU is usage is 80% or more so as to check the condition of the database
 <img width="1174" height="202" alt="image" src="https://github.com/user-attachments/assets/a4905c51-dcb0-485c-89fa-9f589bd6c723" />
 
--Data Usage alert indicating excessive usage of data prompting the user to chech the database
+  - Data Usage alert indicating excessive usage of data prompting the user to chech the database
 
 <img width="1189" height="189" alt="image" src="https://github.com/user-attachments/assets/f67f4871-aa08-4f43-b4fd-94953ced73c9" />
 
