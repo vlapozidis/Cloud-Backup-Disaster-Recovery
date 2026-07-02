@@ -54,7 +54,7 @@ A relational database schema was designed with 10 tables including proper primar
 
 ---
 
-### 3. Performance Baseline
+### 2. Performance Baseline
 
 - Configured Azure Monitor metrics
 - Tracked DTU / vCore usage
@@ -113,12 +113,12 @@ Retention policies:
 <img width="1297" height="324" alt="image" src="https://github.com/user-attachments/assets/fd8e4346-1512-4611-85dc-d59d4530d5f4" />
 
 
--This architecture represents a geo-replication setup where an application interacts with a primary database responsible for all read and write operations, while a secondary database in a different region is asynchronously synchronized as a read-only replica. The secondary database is used for disaster recovery and can take over in case of primary failure, improving system availability and reducing downtime through failover capability.
+➱This architecture represents a geo-replication setup where an application interacts with a primary database responsible for all read and write operations, while a secondary database in a different region is asynchronously synchronized as a read-only replica. The secondary database is used for disaster recovery and can take over in case of primary failure, improving system availability and reducing downtime through failover capability.
 
--RPO: Near-zero (typically < 1 minute) due to asynchronous replication between primary and secondary regions.
--RTO: 1–5 minutes due to fast failover capability to the secondary region.
+➱RPO: Near-zero (typically < 1 minute) due to asynchronous replication between primary and secondary regions.
+
+➱RTO: 1–5 minutes due to fast failover capability to the secondary region.
 RPO and RTO are not fixed values but depend on the Azure SQL Database geo-replication configuration; typically RPO is under 1 minute and RTO is between 1–5 minutes.
-
 This ensures minimal data loss and fast recovery in case of failure.
 
 📌 Disaster Recovery Architecture:
