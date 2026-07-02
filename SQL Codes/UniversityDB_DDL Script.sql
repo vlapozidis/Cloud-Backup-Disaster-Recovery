@@ -63,10 +63,10 @@ CREATE TABLE CourseSections (
     SectionID       INT IDENTITY(1,1) PRIMARY KEY,
     CourseID        INT NOT NULL,
     ProfessorID     INT NOT NULL,
-    AcademicYear    NVARCHAR(9) NOT NULL,   -- π.χ. '2025-2026'
-    Semester        NVARCHAR(10) NOT NULL CHECK (Semester IN ('Χειμερινό', 'Εαρινό')),
+    AcademicYear    NVARCHAR(9) NOT NULL,   
+    Semester        NVARCHAR(10) NOT NULL CHECK (Semester IN ('Γ—Γ¥Γ©Γ¬Γ¥Γ±Γ©Γ­ΓΌ', 'Γ…Γ΅Γ±Γ©Γ­ΓΌ')),
     ClassroomID     INT NULL,
-    Schedule        NVARCHAR(200) NULL,     -- π.χ. 'Δευ 10:00-12:00, Τετ 12:00-14:00'
+    Schedule        NVARCHAR(200) NULL,    
     CONSTRAINT FK_Sections_Courses
         FOREIGN KEY (CourseID) REFERENCES Courses(CourseID),
     CONSTRAINT FK_Sections_Professors
@@ -115,12 +115,12 @@ CREATE TABLE Advisors (
         FOREIGN KEY (ProfessorID) REFERENCES Professors(ProfessorID),
     CONSTRAINT FK_Advisors_Students
         FOREIGN KEY (StudentID) REFERENCES Students(StudentID),
-    CONSTRAINT UQ_Advisor_Student UNIQUE (StudentID)  -- κάθε φοιτητής έχει 1 ενεργό advisor
+    CONSTRAINT UQ_Advisor_Student UNIQUE (StudentID) 
 );
 GO
 
 /* ============================================================
-   Indexes σε critical columns (performance baseline)
+   Indexes on critical columns (performance baseline)
    ============================================================ */
 CREATE INDEX IX_Students_DepartmentID ON Students(DepartmentID);
 CREATE INDEX IX_Students_EnrollmentDate ON Students(EnrollmentDate);
