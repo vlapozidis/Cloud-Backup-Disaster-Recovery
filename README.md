@@ -31,7 +31,7 @@ The system includes the following components:
 
 A relational database schema was designed with 10 tables including proper primary and foreign key relationships.
 
-📌 ER diagram:
+📌 Database diagram:
 
 <img width="2470" height="948" alt="image" src="https://github.com/user-attachments/assets/ee6347b9-f09a-4153-a221-ebd9474080dc" />
 
